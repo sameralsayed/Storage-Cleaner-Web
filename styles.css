@@ -1,0 +1,41 @@
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background: #f8f9fa;
+}
+
+.card {
+    border: none;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.btn {
+    border-radius: 12px;
+    font-weight: 600;
+}
+
+.btn-success {
+    background: #28a745;
+}
+
+#duplicatesList .card {
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#duplicatesList .card.selected {
+    border: 3px solid #28a745;
+    opacity: 0.9;
+}
+
+#duplicatesList img {
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
